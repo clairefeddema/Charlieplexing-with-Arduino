@@ -62,6 +62,9 @@ buttonNew = digitalRead(buttonPin);
 //Calls the correct functions for each individual LED of the display 
 // in quick succession to turn on the correct LEDs and display the numbers
 // 0 through 9 based on the value of the count variable 
+  
+// Short delays are needed between function calls to prevent LEDs that are supposed to
+// be off from turning on, not sure why, may have something to do with signals mixing 
 if(count == 0) {
   led1 ();
   delay(d);
